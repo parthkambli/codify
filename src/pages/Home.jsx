@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 // Import all images from assets
 import HeroImage from '../assets/hero-students.png';           // Two students image
 import BgRIng from '../assets/bg-ring.png';           // ring behind the student
-import Course1 from '../assets/fullstack.png';
+import Course1 from '../assets/web-course.png';
 import Course2 from '../assets/data-analysis.png';
-import Course3 from '../assets/mobile-app.png';
+import Course3 from '../assets/mobile-dev.png';
 import Course4 from '../assets/data-science.png';
 
 import {
@@ -213,7 +213,10 @@ const Home = () => {
               <div className="p-8">
                 <h3 className="text-2xl font-semibold mb-2">FULL STACK WEB DEVELOPMENT</h3>
                 <p className="text-gray-600">Build web applications from frontend to backend.</p>
-                <Link to="/courses" className="text-blue-600 font-medium mt-6 inline-block group-hover:underline">
+                <Link
+  to="/courses-detail/full-stack-web-development"
+  className="text-blue-600 font-medium mt-6 inline-block group-hover:underline"
+>
                   View Details →
                 </Link>
               </div>
@@ -224,7 +227,10 @@ const Home = () => {
               <div className="p-8">
                 <h3 className="text-2xl font-semibold mb-2">DATA ANALYSIS</h3>
                 <p className="text-gray-600">Turn data into meaningful insights and reports.</p>
-                <Link to="/courses" className="text-blue-600 font-medium mt-6 inline-block group-hover:underline">
+                <Link
+  to="/courses-detail/data-analysis"
+  className="text-blue-600 font-medium mt-6 inline-block group-hover:underline"
+>
                   View Details →
                 </Link>
               </div>
@@ -235,7 +241,10 @@ const Home = () => {
               <div className="p-8">
                 <h3 className="text-2xl font-semibold mb-2">MOBILE APP DEVELOPMENT</h3>
                 <p className="text-gray-600">Learn to build beautiful Android & iOS applications.</p>
-                <Link to="/courses" className="text-blue-600 font-medium mt-6 inline-block group-hover:underline">
+                <Link
+  to="/courses-detail/mobile-app-development"
+  className="text-blue-600 font-medium mt-6 inline-block group-hover:underline"
+>
                   View Details →
                 </Link>
               </div>
@@ -246,7 +255,10 @@ const Home = () => {
               <div className="p-8">
                 <h3 className="text-2xl font-semibold mb-2">DATA SCIENCE</h3>
                 <p className="text-gray-600">Master data science, machine learning & AI.</p>
-                <Link to="/courses" className="text-blue-600 font-medium mt-6 inline-block group-hover:underline">
+                <Link
+  to="/courses-detail/data-science"
+  className="text-blue-600 font-medium mt-6 inline-block group-hover:underline"
+>
                   View Details →
                 </Link>
               </div>
@@ -338,9 +350,12 @@ const Home = () => {
         </div>
 
         {/* Button */}
-        <button className="bg-white hover:bg-gray-100 text-black px-6 sm:px-7 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-200 whitespace-nowrap shadow-md">
-            Enroll now
-        </button>
+        <Link
+  to="/courses"
+  className="bg-white hover:bg-gray-100 text-black px-6 sm:px-7 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-200 whitespace-nowrap shadow-md inline-block"
+>
+  Enroll now
+</Link>
 
         </div>
     </div>

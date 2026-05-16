@@ -195,7 +195,7 @@ const Footer = () => {
 
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href=""
                 className="w-11 h-11 rounded-lg bg-white/10 hover:bg-white hover:text-[#0F6FFF] transition-all duration-300 flex items-center justify-center text-xl"
               >
                 <FaInstagram />
@@ -232,10 +232,14 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-6">Courses</h3>
             <ul className="space-y-3 text-[15px]">
-              <li className="hover:text-gray-200 cursor-pointer transition duration-300">Full Stack Web Development</li>
-              <li className="hover:text-gray-200 cursor-pointer transition duration-300">Data Analysis</li>
-              <li className="hover:text-gray-200 cursor-pointer transition duration-300">Mobile App Development</li>
-              <li className="hover:text-gray-200 cursor-pointer transition duration-300">Data Science</li>
+              <a href="/courses-detail/full-stack-web-development"> <li className="hover:text-gray-200 cursor-pointer transition duration-300">Full Stack Web Development</li>
+</a>
+<a href="/courses-detail/data-analysis">              <li className="hover:text-gray-200 cursor-pointer transition duration-300">Data Analysis</li>
+</a>
+<a href="/courses-detail/mobile-app-development">              <li className="hover:text-gray-200 cursor-pointer transition duration-300">Mobile App Development</li>
+</a>
+<a href="/courses-detail/data-science">              <li className="hover:text-gray-200 cursor-pointer transition duration-300">Data Science</li>
+</a>
             </ul>
           </div>
 

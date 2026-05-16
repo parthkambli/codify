@@ -1,4 +1,5 @@
 // src/pages/About.jsx
+import { Link } from "react-router-dom";
 
 import React from "react";
 import {
@@ -224,9 +225,12 @@ const About = () => {
               </p>
             </div>
 
-            <button className="bg-white text-[#111] px-10 py-4 rounded-2xl text-xl font-semibold hover:scale-105 transition duration-300 shadow-lg">
-              Enroll Now
-            </button>
+            <Link
+  to="/courses"
+  className="bg-white hover:bg-gray-100 text-black px-6 sm:px-7 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-200 whitespace-nowrap shadow-md inline-block"
+>
+  Enroll now
+</Link>
           </div>
         </section>
       </div>
