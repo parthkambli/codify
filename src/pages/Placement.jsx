@@ -119,7 +119,7 @@ const Placement = () => {
   </div>
 </section>
       {/* RECRUITERS */}
-      <section className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 mt-20">
+      {/* <section className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 mt-20">
 
         <h2 className="text-4xl font-bold text-center text-[#222]">
           Our Top Recruiters
@@ -127,7 +127,7 @@ const Placement = () => {
 
         <div className="bg-[#ECECF2] rounded-[28px] mt-12 h-[180px] sm:h-[220px] lg:h-[250px] shadow-sm"></div>
 
-      </section>
+      </section> */}
 
       {/* SUCCESS STORIES */}
       <section className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 mt-24 pb-24">
