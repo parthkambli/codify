@@ -106,7 +106,7 @@ const PrivacyPolicy = () => {
                 <br />
                 Email: codifyinstitute.com@gmail.com
                 <br />
-                Phone: +91 7759020121
+                Phone: +91 9028793459
               </p>
             </div>
 

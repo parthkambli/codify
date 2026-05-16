@@ -40,7 +40,7 @@ const Contact = () => {
               href="tel:+917759020121"
               className="mt-6 text-[20px] sm:text-[24px] font-semibold underline text-black break-all"
             >
-              +91 7759020121
+              +91 9028793459
             </a>
           </div>
 
