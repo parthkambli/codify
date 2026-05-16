@@ -12,26 +12,32 @@ import dataImg from "../assets/data-analysis.png";
 import mobileImg from "../assets/mobile-dev.png";
 import scienceImg from "../assets/data-science.png";
 
+import { Link } from "react-router-dom";
+
 const courses = [
   {
+    slug: "full-stack-web-development",
     title: "FULL STACK WEB DEVELOPMENT",
     description:
       "Build complete web and mobile applications using frontend, backend, databases, and APIs.",
     image: webImg,
   },
   {
+    slug: "data-analysis",
     title: "DATA ANALYSIS",
     description:
       "Analyze and visualize data to discover insights and support better decision-making.",
     image: dataImg,
   },
   {
+    slug: "mobile-app-development",
     title: "MOBILE APP DEVELOPMENT",
     description:
       "Create fast, beautiful, and cross-platform mobile apps for Android and iOS using Flutter.",
     image: mobileImg,
   },
   {
+    slug: "data-science",
     title: "DATA SCIENCE",
     description:
       "Master Data Science with hands on training in python, Machine Learning and Data Analysis.",
@@ -72,13 +78,13 @@ const Courses = () => {
       </section>
 
       {/* FILTER */}
-      <section className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8 mt-10">
+      {/* <section className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8 mt-10">
 
         <button className="border-2 border-black rounded-full px-8 py-3 text-[18px] font-semibold bg-white hover:bg-black hover:text-white transition duration-300 shadow-sm">
           All Courses
         </button>
 
-      </section>
+      </section> */}
 
       {/* COURSES */}
       <section className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -152,11 +158,12 @@ const Courses = () => {
                   {/* BUTTON */}
                   <div className="mt-8 lg:mt-0 flex lg:justify-end">
 
-                    <button className="border-2 border-[#0F6FFF] text-[#0F6FFF] hover:bg-[#0F6FFF] hover:text-white transition duration-300 rounded-[14px] px-7 py-3 text-[18px] sm:text-[20px] font-bold shadow-sm">
-
+                    <Link
+                      to={`/courses-detail/${course.slug}`}
+                      className="border-2 border-[#0F6FFF] text-[#0F6FFF] hover:bg-[#0F6FFF] hover:text-white transition duration-300 rounded-[14px] px-7 py-3 text-[18px] sm:text-[20px] font-bold shadow-sm inline-flex items-center justify-center"
+                    >
                       View Details
-
-                    </button>
+                    </Link>
 
                   </div>
 
