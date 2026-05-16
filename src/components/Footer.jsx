@@ -8,7 +8,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/Logo-W.png";
 
 const Footer = () => {
   return (
@@ -21,10 +21,10 @@ const Footer = () => {
             <img
               src={logo}
               alt="Codify Institute"
-              className="w-[180px] mb-6"
+              className="w-[380px] mb-6"
             />
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center gap-4">
               <a
                 href="#"
                 className="w-11 h-11 rounded-lg bg-white/10 hover:bg-white hover:text-[#0F6FFF] transition-all duration-300 flex items-center justify-center text-xl"
@@ -133,7 +133,7 @@ const Footer = () => {
                 <FaMapMarkerAlt className="mt-1 text-sm" />
 
                 <span>
-                  Shop No 201 / 202,
+                  Shop No 212 / 213,
                   Gold Crest 369,
                   Above Zudio,
                   New Viva College Road,
