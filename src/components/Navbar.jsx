@@ -21,31 +21,31 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-x-10 text-[15px] font-medium">
             <a 
-              href="#home" 
+              href="home" 
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
               Home
             </a>
             <a 
-              href="#about" 
+              href="about" 
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
               About
             </a>
             <a 
-              href="#courses" 
+              href="courses" 
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
               Courses
             </a>
             <a 
-              href="#contact" 
+              href="contact" 
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
               Contact Us
             </a>
             <a 
-              href="#placement" 
+              href="placement" 
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
               Placement
@@ -57,7 +57,7 @@ const Navbar = () => {
             <button 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95"
             >
-              Login
+              Enquiry
             </button>
           </div>
 
