@@ -8,7 +8,6 @@ const About = () => {
         {/* ABOUT PAGE CONTENT */}
       </div>
 
-      <Footer />
     </>
   );
 };
