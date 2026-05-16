@@ -53,12 +53,59 @@ const toolIcons = {
   powerbi: <FaChartBar className="text-[#F2C811]" />,
 };
 
+
+
 const CourseDetail = () => {
   const { slug } = useParams();
 
   const course = coursesData.find(
     (item) => item.slug === slug
   );
+
+  const handlePayment = () => {
+
+  const options = {
+    key: import.meta.env.VITE_RAZORPAY_KEY_ID,
+
+    amount: course.price * 100,
+
+    currency: "INR",
+
+    name: "Codify Institute",
+
+    description: course.title,
+
+    image: "/logo.png",
+
+    handler: function (response) {
+
+      console.log("Payment Success:", response);
+
+      localStorage.setItem("payment_success", "true");
+
+      window.location.href = "/thank-you";
+
+    },
+
+    prefill: {
+      name: "",
+      email: "",
+      contact: "",
+    },
+
+    notes: {
+      course: course.title,
+    },
+
+    theme: {
+      color: "#0F6FFF",
+    },
+  };
+
+  const razorpay = new window.Razorpay(options);
+
+  razorpay.open();
+};
 
   if (!course) {
     return (
@@ -96,6 +143,10 @@ const CourseDetail = () => {
               {course.description}
             </p>
 
+            <p className="mt-6 text-[32px] sm:text-[40px] font-bold text-black">
+              ₹{course.price.toLocaleString()}
+            </p>
+
             {/* INFO */}
             <div className="flex flex-wrap gap-8 mt-8">
 
@@ -112,7 +163,9 @@ const CourseDetail = () => {
             </div>
 
             {/* BUTTON */}
-            <button className="mt-8 bg-[#0F6FFF] hover:bg-blue-700 transition duration-300
+            <button
+            onClick={handlePayment}
+            className="mt-8 bg-[#0F6FFF] hover:bg-blue-700 transition duration-300
             text-white font-bold
             px-10 py-4
             rounded-[14px]

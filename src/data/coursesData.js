@@ -18,6 +18,8 @@ export const coursesData = [
 
     duration: '24 Months',
 
+    price: 4999,
+
     level: 'Beginner',
 
     language: 'English/Hindi',
@@ -66,6 +68,8 @@ export const coursesData = [
 
     duration: '12 Months',
 
+    price: 4999,
+
     level: 'Beginner',
 
     language: 'English/Hindi',
@@ -109,6 +113,8 @@ export const coursesData = [
 
     duration: '18 Months',
 
+    price: 4999,
+
     level: 'Beginner',
 
     language: 'English/Hindi',
@@ -149,6 +155,8 @@ export const coursesData = [
       'Master machine learning, AI, statistics, and predictive modeling.',
 
     duration: '18 Months',
+
+    price: 4999,
 
     level: 'Intermediate',
 

@@ -3,6 +3,7 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';     // ← Added Footer
+import ProtectedThankYouRoute from './components/ProtectedThankYouRoute';
 
 // Import pages
 import Home from './pages/Home';
@@ -15,6 +16,7 @@ import Enquiry from './pages/Enquiry';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import TermsConditions from './pages/TermsConditions';
+import ThankYou from './pages/ThankYou';
 
 function App() {
   return (
@@ -34,6 +36,14 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
             <Route path="/terms-and-conditions" element={<TermsConditions />} />
+            <Route
+              path="/thank-you"
+              element={
+                <ProtectedThankYouRoute>
+                  <ThankYou />
+                </ProtectedThankYouRoute>
+              }
+            />
 
           </Routes>
         </main>
