@@ -62,45 +62,36 @@ const Courses = () => {
           <div className="absolute bottom-14 right-1/3 w-2 h-2 bg-white rounded-full"></div>
         </div>
 
-        <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8 py-14 sm:py-16 lg:py-20 relative z-10">
+        <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8 py-12 sm:py-14 lg:py-16 relative z-10">
 
           {/* TITLE */}
-          <h1 className="text-center text-white text-[34px] sm:text-[48px] lg:text-[68px] font-bold leading-tight">
+          <h1 className="text-center text-white text-[34px] sm:text-[48px] lg:text-[62px] font-bold leading-tight">
             Our Courses
           </h1>
 
           {/* SUBTITLE */}
-          <p className="text-center text-white mt-3 text-[16px] sm:text-[22px] font-medium">
+          <p className="text-center text-white mt-3 text-[15px] sm:text-[20px] font-medium">
             Explore Our Industry Related courses and start your career
           </p>
 
         </div>
       </section>
 
-      {/* FILTER */}
-      {/* <section className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8 mt-10">
-
-        <button className="border-2 border-black rounded-full px-8 py-3 text-[18px] font-semibold bg-white hover:bg-black hover:text-white transition duration-300 shadow-sm">
-          All Courses
-        </button>
-
-      </section> */}
-
       {/* COURSES */}
-      <section className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <section className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8 py-10 sm:py-12">
 
-        <div className="space-y-10">
+        <div className="space-y-7">
 
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-white rounded-[28px] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.12)] border border-[#d8d8d8]"
+              className="bg-white rounded-[24px] overflow-hidden shadow-[0_4px_10px_rgba(0,0,0,0.10)] border border-[#d8d8d8]"
             >
 
-              <div className="grid lg:grid-cols-[320px_1fr]">
+              <div className="grid lg:grid-cols-[260px_1fr]">
 
                 {/* LEFT IMAGE */}
-                <div className="h-[240px] sm:h-[300px] lg:h-full">
+                <div className="h-[190px] sm:h-[220px] lg:h-full">
 
                   <img
                     src={course.image}
@@ -111,31 +102,31 @@ const Courses = () => {
                 </div>
 
                 {/* RIGHT CONTENT */}
-                <div className="px-6 sm:px-10 py-8 sm:py-10 flex flex-col justify-between">
+                <div className="px-5 sm:px-7 py-5 sm:py-6 flex flex-col justify-between">
 
                   <div>
 
                     {/* TITLE */}
-                    <h2 className="text-[28px] sm:text-[38px] lg:text-[46px] font-bold text-black leading-tight">
+                    <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-black leading-tight">
                       {course.title}
                     </h2>
 
                     {/* DESCRIPTION */}
-                    <p className="mt-5 text-[#666] text-[17px] sm:text-[20px] leading-8 font-medium max-w-[700px]">
+                    <p className="mt-3 text-[#666] text-[15px] sm:text-[17px] leading-7 font-medium max-w-[700px]">
                       {course.description}
                     </p>
 
                     {/* INFO */}
-                    <div className="flex flex-wrap items-center gap-8 mt-7">
+                    <div className="flex flex-wrap items-center gap-6 mt-5">
 
                       {/* DURATION */}
-                      <div className="flex items-center gap-3 text-[#555] font-semibold text-[16px] sm:text-[18px]">
+                      <div className="flex items-center gap-2 text-[#555] font-semibold text-[14px] sm:text-[16px]">
                         <FaClock className="text-[#0F6FFF]" />
                         <span>24 Months</span>
                       </div>
 
                       {/* LEVEL */}
-                      <div className="flex items-center gap-3 text-[#555] font-semibold text-[16px] sm:text-[18px]">
+                      <div className="flex items-center gap-2 text-[#555] font-semibold text-[14px] sm:text-[16px]">
                         <FaSignal className="text-[#0F6FFF]" />
                         <span>Beginner</span>
                       </div>
@@ -143,24 +134,24 @@ const Courses = () => {
                     </div>
 
                     {/* STARS */}
-                    <div className="flex items-center gap-2 mt-6">
+                    <div className="flex items-center gap-1 mt-4">
 
-                      <FaStar className="text-yellow-400 text-[22px]" />
-                      <FaStar className="text-yellow-400 text-[22px]" />
-                      <FaStar className="text-yellow-400 text-[22px]" />
-                      <FaStar className="text-yellow-400 text-[22px]" />
-                      <FaStar className="text-yellow-400 text-[22px]" />
+                      <FaStar className="text-yellow-400 text-[18px]" />
+                      <FaStar className="text-yellow-400 text-[18px]" />
+                      <FaStar className="text-yellow-400 text-[18px]" />
+                      <FaStar className="text-yellow-400 text-[18px]" />
+                      <FaStar className="text-yellow-400 text-[18px]" />
 
                     </div>
 
                   </div>
 
                   {/* BUTTON */}
-                  <div className="mt-8 lg:mt-0 flex lg:justify-end">
+                  <div className="mt-5 flex lg:justify-end">
 
                     <Link
                       to={`/courses-detail/${course.slug}`}
-                      className="border-2 border-[#0F6FFF] text-[#0F6FFF] hover:bg-[#0F6FFF] hover:text-white transition duration-300 rounded-[14px] px-7 py-3 text-[18px] sm:text-[20px] font-bold shadow-sm inline-flex items-center justify-center"
+                      className="border-2 border-[#0F6FFF] text-[#0F6FFF] hover:bg-[#0F6FFF] hover:text-white transition duration-300 rounded-[12px] px-6 py-2.5 text-[16px] sm:text-[18px] font-bold shadow-sm inline-flex items-center justify-center"
                     >
                       View Details
                     </Link>
