@@ -163,9 +163,9 @@ const Placement = () => {
                   Full Stack Developer
                 </p>
 
-                <p className="text-[#666]">
+                {/* <p className="text-[#666]">
                   Placed at TCS
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -195,9 +195,9 @@ const Placement = () => {
                   Frontend Engineer
                 </p>
 
-                <p className="text-[#666]">
+                {/* <p className="text-[#666]">
                   Placed at Paytm
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -226,9 +226,9 @@ const Placement = () => {
                   SDE-2
                 </p>
 
-                <p className="text-[#666]">
+                {/* <p className="text-[#666]">
                   Placed at Microsoft
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
