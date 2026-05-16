@@ -95,7 +95,7 @@ const Navbar = () => {
               
               <div className="pt-4">
                 <button className="w-full bg-blue-600 text-white py-4 rounded-2xl font-semibold">
-                  Login
+                  Enquiry
                 </button>
               </div>
             </div>
