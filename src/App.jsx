@@ -12,6 +12,9 @@ import CourseDetail from './pages/CourseDetail';
 import Contact from './pages/Contact';
 import Placement from './pages/Placement';
 import Enquiry from './pages/Enquiry';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
+import TermsConditions from './pages/TermsConditions';
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/placement" element={<Placement />} />
             <Route path="/enquiry" element={<Enquiry/>} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/terms-and-conditions" element={<TermsConditions />} />
 
           </Routes>
         </main>

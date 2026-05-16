@@ -81,11 +81,7 @@ const Contact = () => {
 
             {/* ADDRESS */}
             <p className="mt-6 text-[18px] sm:text-[22px] leading-[34px] font-medium text-black">
-              Shop no 212, Gold crest 369,
-              above Zudio, near New Viva
-              college, above zudio, Virar
-              West, Virar, Maharashtra
-              401303
+              Shop No 212 / 213, Gold Crest 369, Above Zudio, New Viva College Road, Virar West, Maharashtra 401303
             </p>
           </div>
 
